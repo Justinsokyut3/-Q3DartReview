@@ -32,15 +32,16 @@ void describeWeather(double celsius) {
   String activity;
 
   if (celsius <= 25.0) {
-    description = 'Warm and pleasant';
-    activity = 'Great weather for outdoor activities';
+    description = "Warm and pleasant";
+    activity = "Great weather for outdoor activities";
     
   } else { 
-    description = 'Extremely hot';
-    activity = 'Avoid outdoor activities during peak hours!';
+    description = "Extremely hhot"
+    activity = "Avoid outdoor activities during peak hours!";
   }
 
   print('${celsius.toStringAsFixed(1)}°C: $description - $activity');
 
 }
+
 
