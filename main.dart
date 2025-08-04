@@ -4,18 +4,18 @@ void main() {
 
   print('=== Temperature Converter ===');
 
- 
-
-  double convertedToC = fahrenheitToCelsius(fahrenheit);
-  print('${fahrenheit}°F = ${convertedToC.toStringAsFixed(1)}°C');
 
    double convertedToF = celsiusToFahrenheit(celsius);
   print('${celsius}°C = ${convertedToF.toStringAsFixed(1)}°F');
+  
+  double convertedToC = fahrenheitToCelsius(fahrenheit);
+  print('${fahrenheit}°F = ${convertedToC.toStringAsFixed(1)}°C');
+  
 
- describeWeather(celsius);
  describeWeather(convertedToC);
-}
+ describeWeather(celsius);
 
+}
 
 double fahrenheitToCelsius(double fahrenheit) {
   double calculateCelsius = (fahrenheit - 32) * 5 / 9;
@@ -43,3 +43,4 @@ void describeWeather(double celsius) {
   print('${celsius.toStringAsFixed(1)}°C: $description - $activity');
 
 }
+
